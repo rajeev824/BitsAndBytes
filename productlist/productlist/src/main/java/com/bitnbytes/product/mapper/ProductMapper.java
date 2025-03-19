@@ -20,7 +20,7 @@ public class ProductMapper {
     // ✅ DTO to Entity Conversion
     public static Product toProductEntity(ProductDTO productDTO, Category category) {
         Product product = new Product();
-        product.setId(productDTO.getId()); // ✅ If ProductDTO has an ID, set it
+        //product.setId(productDTO.getId()); // ✅ If ProductDTO has an ID, set it
         product.setName(productDTO.getName());
         product.setDescription(productDTO.getDescription());
         product.setPrice(productDTO.getPrice()); // ✅ Fix: `productDTO.getPrice()` (not `ProductDTO.getPrice()`)
